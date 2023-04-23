@@ -1,0 +1,35 @@
+{% extends "base/main.html" %}
+{% block content %}
+
+
+<body>
+<section class="hero">
+    <div class="container">
+        <div class="left-col">
+            <p class="subhead">Travel Smarter, <span>Not Harder</span> With TourPal!</p>
+
+            <div class="hero-cta">
+                <a href="{% url 'guide'%}" class="mission-cta">
+                    AI Tour Guide
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<br><br><br>
+<div class="what">
+  <h3>What does our AI Tour Guide do?</h3>
+  <p>AI tour guide is an innovative tool designed to provide personalized recommendations and information about tourist attractions, restaurants, and other points of interest in a given city. Using the OpenAI API, the tour guide analyzes user data to provide tailored recommendations based on the user's interests, preferences, and other factors. It can generate natural language responses to user questions and provide maps and images to enhance the user's experience. Whether you're looking for the best museum exhibits, the tastiest local cuisine, or the most scenic outdoor spots, your AI tour guide is there to help you discover the city like a local.
+  </p>
+</div>
+
+<div class="realize">
+  <h2>Travel Smarter, Not Harder </h2>
+  <a href="{% url 'guide'%}" class="more">
+    Click here to use our AI Tour Guide!
+</a>
+</div>
+<br><br><br>
+
+</body>
+{% endblock content %}

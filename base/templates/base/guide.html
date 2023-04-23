@@ -1,0 +1,40 @@
+{% extends "base/main.html" %}
+{% block content %}
+
+
+<body>
+  <br><br><br><br><br><br>
+
+<h1 style="text-align: center; font-size: 40px;">AI Tour Guide</h1>
+<p style="text-align: center; font-size: 20px;">Please answer the following questions! We will do our best to evaluate your carbon footprint and provide suggestions</p>
+<br>
+<form class="guide"method="post">
+  {% csrf_token %}
+  <div class="questions">
+    <p class="causes" style="text-align: center;">Which city are you interested in exploring?</p>
+    <textarea style="justify-content: center; display: block; margin: auto;"name="city" class="city" rows="3" cols="20"></textarea>
+  <p class="causes" style="text-align: center;">What type of attractions are you interested in (e.g. historical sites, museums, parks, etc.)?</p>
+  <select name="attractions">
+    <option>Historical Sites</option>
+    <option>Museums</option>
+    <option>Parks</option>
+  </select>
+  <p class="causes" style="text-align: center;">Are you traveling with pets or children?</p>
+  <select name="pets">
+    <option>I am</option>
+    <option>I am not</option>
+  </select>
+  <p class="causes" style="text-align: center;">Are you interested in shopping or nightlife?</p>
+  <select name="nightlife">
+    <option>I am</option>
+    <option>I am not</option>
+  </select>
+  <br><br>
+  <button class="more" type="submit">Guide Me!</button>
+</form><br><br>
+</div>
+<h1 style="text-align: center; font-size: 40px;">Our Suggestions!</h1>
+<p style="text-align: center; font-size: 20px;">{{response | safe}}</p>
+</body>
+<br><br><br>
+{% endblock content %}
