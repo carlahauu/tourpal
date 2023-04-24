@@ -1,5 +1,5 @@
 # TourPal | FremontHacks #2 Submission
-##Introduction
+## Introduction
 TourPal is a web-based application that provides personalized recommendations for travelers based on their preferences and interests. With the help of advanced AI algorithms and natural language processing capabilities, the app generates tailored recommendations for restaurants, tourist attractions, and other points of interest in a given city or region.
 
 ## Features
