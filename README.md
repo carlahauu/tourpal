@@ -16,7 +16,7 @@ TourPal is a web-based application that provides personalized recommendations fo
 - Git and GitHub for version control 
 
 ## Installation and Usage
-To use this tool, simply clone the project repository and install the required dependencies using pip. 
+To use this tool, simply clone the project repository and install the required dependencies (openai and django) using pip. 
 Then, run the Django server and navigate to the localhost address in your web browser to access the app. 
 In settings.py, make sure to add the SECRET_KEY. You can use this generator: https://djecrety.ir/
 Then, create a .env file in tourpal/ to store the API Key. Go to OpenAI API and generate a API Key. Store the key as a string in a variable called "OPENAI_KEY"
